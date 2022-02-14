@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/purple_500"
+    >
+
+
+    <LinearLayout
+        android:padding="@dimen/_20sdp"
+        android:id="@+id/linear1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:background="@drawable/bg_back"
+            android:src="@drawable/ic_baseline_arrow_back_24"/>
+
+
+        <TextView
+            android:fontFamily="@font/poppins"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit Profil "
+            android:textSize="@dimen/_20sdp"
+            android:textColor="@color/white"/>
+
+
+
+
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_below="@id/linear1"
+        android:padding="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/top_shape"
+        android:layout_marginTop="20dp">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp">
+
+            <LinearLayout
+                android:padding="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nama Mahasiswa"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/poppins"
+                        />
+                    <EditText
+                        android:textSize="@dimen/_10sdp"
+                        android:fontFamily="@font/poppins"
+                        android:id="@+id/edtNamaMhs_edt"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:background="@drawable/bg_login"
+                        android:padding="@dimen/_5sdp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:fontFamily="@font/poppins"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Jenis Kelamin Mahasiswa"
+                        android:textColor="@color/black"
+                        />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_login"
+                     >
+                        <Spinner
+                            android:textSize="@dimen/_10sdp"
+                            android:fontFamily="@font/poppins"
+                            android:id="@+id/edtJekelMhs_edt"
+                            android:layout_width="fill_parent"
+                            android:layout_height="@dimen/_35sdp"
+                            android:hint="Jenis Kelamin"
+                            android:inputType="text"
+                            android:padding="@dimen/_5sdp"
+                            android:singleLine="true" />
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:fontFamily="@font/poppins"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tanggal Lahir Mahasiswa"
+                        android:textColor="@color/black"
+                        />
+                    <TextView
+                        android:gravity="center_vertical"
+                        android:textSize="@dimen/_10sdp"
+                        android:fontFamily="@font/poppins"
+                        android:id="@+id/tgllahirMhs_edt"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:background="@drawable/bg_login"
+                        android:padding="@dimen/_5sdp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:fontFamily="@font/poppins"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Alamat Mahasiswa"
+                        android:textColor="@color/black"
+                        />
+                    <EditText
+                        android:textSize="@dimen/_10sdp"
+                        android:fontFamily="@font/poppins"
+                        android:id="@+id/alamatMhs_edt"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:background="@drawable/bg_login"
+                        android:padding="@dimen/_5sdp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:fontFamily="@font/poppins"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Email Mahasiswa"
+                        android:textColor="@color/black"
+                        />
+                    <EditText
+                        android:enabled="false"
+                        android:textSize="@dimen/_10sdp"
+                        android:fontFamily="@font/poppins"
+                        android:id="@+id/emailMhs_edt"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:background="@drawable/bg_login"
+                        android:padding="@dimen/_5sdp"/>
+                </LinearLayout>
+
+<!--                <LinearLayout-->
+<!--                    android:layout_marginTop="@dimen/_15sdp"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="vertical">-->
+<!--                    <TextView-->
+<!--                        android:fontFamily="@font/poppins"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Username"-->
+<!--                        android:textColor="@color/black"-->
+<!--                        />-->
+<!--                    <EditText-->
+<!--                        android:textSize="@dimen/_10sdp"-->
+<!--                        android:fontFamily="@font/poppins"-->
+<!--                        android:id="@+id/username_Edt"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="@dimen/_35sdp"-->
+<!--                        android:background="@drawable/bg_login"-->
+<!--                        android:padding="@dimen/_5sdp"/>-->
+<!--                </LinearLayout>-->
+                  <LinearLayout
+                    android:id="@+id/editFoto"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:fontFamily="@font/poppins"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Foto Profil"
+                        android:textColor="@color/black"
+                        />
+
+                <LinearLayout
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:scaleType="centerCrop"
+                        android:id="@+id/fotooo"
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="@dimen/_80sdp"
+                        android:background="@drawable/bg_login"/>
+                    <TextView
+                        android:id="@+id/pilihfoto"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_width="@dimen/_60sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:text="Pilih Foto"
+                        android:background="@drawable/bg_stats"
+                        android:fontFamily="@font/poppins"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:textSize="@dimen/_8sdp"
+                        android:layout_gravity="center_vertical"/>
+
+                </LinearLayout>
+                  </LinearLayout>
+
+
+                <Button
+                    android:fontFamily="@font/poppins"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Update"
+                    android:text="Update"
+                    />
+
+            </LinearLayout>
+
+
+
+        </androidx.core.widget.NestedScrollView>
+
+
+    </RelativeLayout>
+</RelativeLayout>

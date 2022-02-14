@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:background="@drawable/bg_card"
+        android:id="@+id/btnBayar"
+        android:layout_width="@dimen/_65sdp"
+        android:layout_height="@dimen/_65sdp"
+        android:layout_marginRight="@dimen/_8sdp"
+        android:layout_marginBottom="@dimen/_8sdp"
+     >
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_3sdp"
+            android:layout_centerHorizontal="true">
+
+
+            <ImageView
+                android:scaleType="fitCenter"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:id="@+id/imgFitur"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_launcher_background" />
+            <TextView
+                android:fontFamily="@font/poppins"
+                android:id="@+id/namaFitur"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/_3sdp"
+                android:text="Upi Volunteer"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_8sdp" />
+
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

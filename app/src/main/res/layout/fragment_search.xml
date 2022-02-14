@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".Fragment.SearchFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_500"
+        >
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                   android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/poppins"
+                    android:gravity="center"
+                    android:text="Search"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_18sdp" />
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/_10sdp">
+        <AutoCompleteTextView
+            android:layout_marginTop="@dimen/_20sdp"
+            android:id="@+id/cari_nama"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/bg_login"
+            android:hint="Cari"
+            android:inputType="text"
+            android:paddingLeft="@dimen/_5sdp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins"
+            />
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="60dp"
+            android:id="@+id/row_berita"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

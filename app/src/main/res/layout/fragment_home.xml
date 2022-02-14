@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/purple_500"
+    tools:context=".Fragment.HomeFragment">
+
+
+        <LinearLayout
+            android:id="@+id/linear1"
+            android:padding="@dimen/_20sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:fontFamily="@font/poppins"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Halo, "
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_20sdp"/>
+
+                <TextView
+                    android:fontFamily="@font/poppins"
+                    android:id="@+id/namaUser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Budi Ani"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_20sdp"/>
+
+            </LinearLayout>
+                <TextView
+                    android:fontFamily="@font/poppins"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lagi Cari Apa Nih?, "
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="@dimen/_30sdp"
+                     />
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+    <RelativeLayout
+        android:layout_below="@id/linear1"
+        android:padding="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/top_shape"
+        android:layout_marginTop="10dp">
+         <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+              <LinearLayout
+            android:layout_marginTop="@dimen/_20sdp"
+            android:padding="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:weightSum="2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:fontFamily="@font/poppins"
+                    android:layout_weight="0.5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Fitur"
+                    android:textStyle="bold"
+                    android:textColor="@color/orange"
+                    android:textSize="@dimen/_12sdp"/>
+
+
+            </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_gravity="center"
+                    android:id="@+id/rec_fitur"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:orientation="horizontal"
+                    app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                    tools:itemCount="4"
+                    tools:listitem="@layout/item_fitur" />
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/_10sdp"
+                android:weightSum="2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:fontFamily="@font/poppins"
+                    android:layout_weight="0.5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Upi Today"
+                    android:textStyle="bold"
+                    android:textColor="@color/orange"
+                    android:textSize="@dimen/_12sdp"/>
+                <TextView
+                    android:fontFamily="@font/poppins"
+                    android:id="@+id/lihat2"
+                    android:layout_weight="1.5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Lihat Semua"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_10sdp"/>
+
+            </LinearLayout>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rec_berita"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="horizontal"
+                app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                tools:itemCount="2"
+                tools:listitem="@layout/item_berita" />
+
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/_10sdp"
+                android:weightSum="2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:fontFamily="@font/poppins"
+                    android:layout_weight="0.5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Upi Info"
+                    android:textStyle="bold"
+                    android:textColor="@color/orange"
+                    android:textSize="@dimen/_12sdp"/>
+                <TextView
+                    android:fontFamily="@font/poppins"
+                    android:id="@+id/lihat3"
+                    android:layout_weight="1.5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Lihat Semua"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_10sdp"/>
+
+            </LinearLayout>
+            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/rec_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="horizontal"
+                app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                tools:itemCount="2"
+                tools:listitem="@layout/item_berita" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+
+
+</RelativeLayout>
+</RelativeLayout>
+</RelativeLayout>

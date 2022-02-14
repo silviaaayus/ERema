@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+ >
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_60sdp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/gradien"
+                    android:rotation="180"/>
+
+                <ImageView
+                    android:id="@+id/back"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:background="@drawable/bg_back"
+                    android:src="@drawable/ic_baseline_arrow_back_24"
+                   />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_240sdp"
+                android:scaleType="centerCrop"
+                android:src="#43231818"
+                android:id="@+id/imgBerita"
+                android:translationZ="-1dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_200sdp"
+                android:background="@drawable/bg_card"
+                android:orientation="vertical">
+
+                <TextView
+                    android:fontFamily="@font/poppins"
+                    android:id="@+id/txtJudul"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_marginRight="@dimen/_20sdp"
+                    android:text="Judul Berita Detail"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_16sdp" />
+
+                <LinearLayout
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_marginRight="@dimen/_20sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:textColor="#FA6C6C6C"
+                        android:textSize="@dimen/_10sdp"
+                        android:fontFamily="@font/poppins"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/penulisBeritaLihat"
+                        android:text="Budi"/>
+
+                    <View
+                        android:layout_marginLeft="@dimen/_2sdp"
+                        android:layout_marginRight="@dimen/_2sdp"
+                        android:layout_width="1dp"
+                        android:layout_height="@dimen/_15sdp"
+                        android:background="#FA6C6C6C"
+
+                        />
+
+                    <TextView
+                        android:textColor="#FA6C6C6C"
+                        android:textSize="@dimen/_10sdp"
+                        android:fontFamily="@font/poppins"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tanggalBerita"
+                        android:text="22-12-2021"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:fontFamily="@font/poppins"
+                    android:id="@+id/txtIsi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_20sdp"
+                    android:text="My name is [your name]. I am thrilled to be applying for the [position] role in your company. After reviewing your job description, it’s clear that you’re looking for an enthusiastic applicant that can be relied upon to fully engage with the role and develop professionally in a self-motivated manner. Given these requirements, I believe I am the perfect candidate for the job."
+                    android:textSize="@dimen/_12sdp" />
+
+
+            </LinearLayout>
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

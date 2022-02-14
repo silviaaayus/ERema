@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/_10sdp"
+    tools:context=".RegisterActivity">
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:background="@drawable/bg_back"
+        android:backgroundTint="@color/purple_500"
+        android:src="@drawable/ic_baseline_arrow_back_24"/>
+
+    <TextView
+        android:layout_marginTop="@dimen/_5sdp"
+        android:fontFamily="@font/poppins"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:textSize="@dimen/_25sdp"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:fontFamily="@font/poppins"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nama Mahasiswa"
+                        android:textColor="@color/black"
+                       />
+                    <EditText
+                        android:textSize="@dimen/_10sdp"
+                        android:fontFamily="@font/poppins"
+                        android:id="@+id/edtNamaMhs"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:background="@drawable/bg_login"
+                        android:padding="@dimen/_5sdp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:fontFamily="@font/poppins"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Jenis Kelamin Mahasiswa"
+                        android:textColor="@color/black"
+                      />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_login"
+                        >
+                        <Spinner
+                            android:textSize="@dimen/_10sdp"
+                            android:id="@+id/edtJekelMhs"
+                            android:layout_width="fill_parent"
+                            android:layout_height="@dimen/_35sdp"
+                            android:hint="Jenis Kelamin"
+                            android:inputType="text"
+                            android:padding="@dimen/_5sdp"
+                            android:singleLine="true" />
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:fontFamily="@font/poppins"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tanggal Lahir Mahasiswa"
+                        android:textColor="@color/black"
+                   />
+                    <TextView
+                        android:gravity="center_vertical"
+                        android:textSize="@dimen/_10sdp"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/poppins"
+                        android:id="@+id/tgllahirMhs"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:background="@drawable/bg_login"
+                        android:padding="@dimen/_5sdp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:fontFamily="@font/poppins"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Alamat Mahasiswa"
+                        android:textColor="@color/black"
+                  />
+                    <EditText
+                        android:textSize="@dimen/_10sdp"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/poppins"
+                        android:id="@+id/alamatMhs"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:background="@drawable/bg_login"
+                        android:padding="@dimen/_5sdp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:fontFamily="@font/poppins"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Email Mahasiswa"
+                        android:textColor="@color/black"
+                      />
+                    <EditText
+                        android:textSize="@dimen/_10sdp"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/poppins"
+                        android:id="@+id/emailMhs"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:background="@drawable/bg_login"
+                        android:padding="@dimen/_5sdp"/>
+                </LinearLayout>
+<!--                <LinearLayout-->
+<!--                    android:layout_marginTop="@dimen/_15sdp"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="vertical">-->
+<!--                    <TextView-->
+<!--                        android:fontFamily="@font/poppins"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Username"-->
+<!--                        android:textColor="@color/black"-->
+<!--                     />-->
+<!--                    <EditText-->
+<!--                        android:textSize="@dimen/_10sdp"-->
+<!--                        android:layout_gravity="center"-->
+<!--                        android:fontFamily="@font/poppins"-->
+<!--                        android:id="@+id/usernameMhs"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="@dimen/_35sdp"-->
+<!--                        android:background="@drawable/bg_login"-->
+<!--                        android:padding="@dimen/_5sdp"/>-->
+<!--                </LinearLayout>-->
+                <LinearLayout
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:fontFamily="@font/poppins"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Password"
+                        android:textColor="@color/black"
+                        />
+                    <com.xwray.passwordview.PasswordView
+                        android:textSize="@dimen/_10sdp"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/poppins"
+                        android:id="@+id/pssMhs"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:background="@drawable/bg_login"
+                        android:padding="@dimen/_5sdp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:fontFamily="@font/poppins"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Konfirmasi Password"
+                        android:textColor="@color/black"
+                        />
+                    <com.xwray.passwordview.PasswordView
+                        android:textSize="@dimen/_10sdp"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/poppins"
+                        android:id="@+id/konfirmasipass"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:background="@drawable/bg_login"
+                        android:padding="@dimen/_5sdp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:fontFamily="@font/poppins"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Foto Profil"
+                        android:textColor="@color/black"
+                        />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:id="@+id/foto"
+                            android:layout_width="@dimen/_80sdp"
+                            android:layout_height="@dimen/_80sdp"
+                            android:background="@drawable/bg_login"/>
+                        <TextView
+                            android:id="@+id/pilihfoto"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_width="@dimen/_60sdp"
+                            android:layout_height="wrap_content"
+                            android:text="Pilih Foto"
+                            android:background="@drawable/bg_stats"
+                            android:fontFamily="@font/poppins"
+                            android:textColor="@color/white"
+                            android:gravity="center"
+                            android:layout_gravity="center_vertical"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <Button
+                    android:fontFamily="@font/poppins"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/register"
+                    android:text="register"
+                    />
+
+            </LinearLayout>
+
+
+        </androidx.core.widget.NestedScrollView>
+
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>
